@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+<article class="main">
+  <h1>{{ .Title }}</h1>
+  <p class="attention-grabber">{{ .Description }}</p>
+  {{ .Content }}
+<aside>
+<small>
+  {{ range .Params.tags }}
+  <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+	{{ end }}
+</small>
+</aside>
+</article>
+
+{{ partial "footer.html" . }}

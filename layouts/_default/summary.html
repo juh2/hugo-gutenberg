@@ -1,0 +1,14 @@
+<article>
+    <header>
+      <h2><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a> </h2>
+      <!--
+      <div class="post-meta">{{ .Date.Format "02.01.2006" }} </div>
+      -->
+    </header>
+    <p>
+    {{ .Summary }}
+    </p>
+    <footer>
+        <a href='{{ .Permalink }}'><nobr>{{ .Site.Data.i18n.morelink}} →</nobr></a>
+    </footer>
+</article>

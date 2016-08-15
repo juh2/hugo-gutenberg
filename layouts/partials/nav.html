@@ -1,0 +1,11 @@
+<section class="navigation">
+<nav id="menu">
+    <ul style="list-style:none">
+    <li> <a href="/">Start</a>
+      {{ range .Site.Menus.main }}
+    <li> <a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ end }}
+
+  </ul>
+</nav>
+</section>

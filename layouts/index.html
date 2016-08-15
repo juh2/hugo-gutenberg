@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+
+<header>
+<h1>{{ .Title }}</h1>
+<p class="attention-grabber">{{ .Description }}</p>
+</header>
+
+<article>
+    {{ range .Data.Pages.GroupBy "Section" }}
+    {{ if and (ne .Key "page") (ne .Key "editorials") }}
+    <h1>{{ .Key }}</h1>
+            {{ range .Pages }}
+                {{ .Render "summary"}}
+            {{ end }}
+    {{ end }}
+    {{ end }}
+</article>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+
+<article>
+   <h1 id="title">{{ .Title }}</h1>
+   <h2>Erinnerungen</h2>
+    {{ range .Data.Pages.GroupBy "Section" }}
+            {{ range .Pages }}
+            <h3>
+            <a href="{{ .Permalink }}">{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</a>
+            </h3>
+            <p class="attention-grabber">{{ .Description }}</p>
+            {{ end }}
+            {{ end }}
+</article>
+<hr />   
+<section>
+<a href="https://de.wikipedia.org/wiki/{{ .Title }}" target="_blank">Das Jahr im Überblick</a>
+</section>
+
+{{ partial "footer.html" . }}
