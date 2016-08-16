@@ -1,5 +1,4 @@
-{{ partial "header.html" . }}
-
+{{ define "main" }}
 
 <article>
    <h1 id="title">{{ .Title }}</h1>
@@ -18,4 +17,4 @@
 <a href="https://de.wikipedia.org/wiki/{{ .Title }}" target="_blank">Das Jahr im Überblick</a>
 </section>
 
-{{ partial "footer.html" . }}
+{{ end }}
