@@ -1,8 +1,8 @@
 {{ define "main" }}
-<article class="main">
   <h1>{{ .Title }}</h1>
   <p class="attention-grabber">{{ .Description }}</p>
   {{ .Content }}
+
 <aside>
 <small>
   {{ range .Params.tags }}
@@ -10,6 +10,5 @@
 	{{ end }}
 </small>
 </aside>
-</article>
 
 {{ end }}

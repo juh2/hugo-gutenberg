@@ -1,13 +1,11 @@
 {{ define "main" }}
-<header>
+
 <h1 id="frontpage">{{ .Title }}</h1>
 <p class="attention-grabber">{{ .Site.Params.description }}</p>
 <figure>
 <img src="/images/GP.png">
 </figure>
-</header>
 
-<article>
     {{ range .Data.Pages.GroupBy "Section" }}
     {{ if and (ne .Key "page") (ne .Key "editorials") }}
     <h1>{{ .Key }}</h1>
@@ -16,6 +14,5 @@
             {{ end }}
     {{ end }}
     {{ end }}
-</article>
 
 {{ end }}
