@@ -2,7 +2,7 @@
    ========================================================================== */
 
 body,
-html {
+html [canvas=container], [off-canvas]{
 
   @media screen and (min-width: #{ $max-width + 5 + 'em'}) {
     margin: 0;

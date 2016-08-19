@@ -114,6 +114,7 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
 /* Font themes
    ========================================================================== */
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic&subset=latin,latin-ext);
+@import url(slidebars.css);
 @media screen and (min-width: 40em) {
   .floatLeft {
     float: left;
@@ -218,7 +219,7 @@ aside {
    ========================================================================== */
 @media screen and (min-width: 40em) {
   body,
-  html {
+  html [canvas=container], [off-canvas] {
     margin: 0;
     width: 100%;
     max-width: none;

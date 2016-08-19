@@ -2,26 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  {{ if .Params.lang }}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>{{ .Title }} – Das Generationenprojekt. Geschichte von unten.</title>
+
+  <link rel="stylesheet" href="/assets/combined.css">
+  <link rel="stylesheet" href="/assets/slidebars.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic' rel='stylesheet' type='text/css'>
+  {{ template "_internal/twitter_cards.html" . }}
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/schema.html" . }}
+  {{ template "_internal/google_news.html" . }}
+
+</head>
+
+{{ if .Params.lang }}
     <body lang="{{ .Params.lang }}">
     {{ else }}
     <body lang="de">
     {{ end }}
-  <title>{{ .Title }} – Das Generationenprojekt. Geschichte von unten.</title>
 
-  <link rel="stylesheet" href="/assets/combined.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic' rel='stylesheet' type='text/css'>
-    {{ template "_internal/twitter_cards.html" . }}
-    {{ template "_internal/opengraph.html" . }}
-    {{ template "_internal/schema.html" . }}
-    {{ template "_internal/google_news.html" . }}
-
-</head>
- 
-{{ partial "nav.html" . }}
+<div canvas="container">
 
 
+<p>
+<button class="toggle-slidebar-1">Navigation</button>
+</p>
 {{ block "main" . }}{{ end}}
 
 <footer>
@@ -34,7 +40,57 @@
     </section>
   </p>
 </footer>
+</div>
+
+{{ partial "nav.html" . }}
+
 <script src="/assets/combined.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/assets/slidebars.min.js"></script>
+<script>
+      ( function ( $ ) {
+        // Initialize Slidebars
+        var controller = new slidebars();
+        controller.init();
+
+        // Toggle Slidebars
+        $( '.toggle-slidebar-1' ).on( 'click', function ( event ) {
+          // Stop default action and bubbling
+          event.stopPropagation();
+          event.preventDefault();
+
+          // Toggle the Slidebar with id 'id-1'
+          controller.toggle( 'slidebar-1' );
+        } );
+
+        $( '.toggle-id-2' ).on( 'click', function ( event ) {
+          // Stop default action and bubbling
+          event.stopPropagation();
+          event.preventDefault();
+
+          // Toggle the Slidebar with id 'id-2'
+          controller.toggle( 'id-2' );
+        } );
+
+        $( '.toggle-id-3' ).on( 'click', function ( event ) {
+          // Stop default action and bubbling
+          event.stopPropagation();
+          event.preventDefault();
+
+          // Toggle the Slidebar with id 'id-3'
+          controller.toggle( 'id-3' );
+        } );
+
+        $( '.toggle-id-4' ).on( 'click', function ( event ) {
+          // Stop default action and bubbling
+          event.stopPropagation();
+          event.preventDefault();
+
+          // Toggle the Slidebar with id 'id-4'
+          controller.toggle( 'id-4' );
+        } );
+      } ) ( jQuery );
+    </script>
 
 </body>
 </html>
