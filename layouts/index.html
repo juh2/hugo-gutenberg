@@ -1,7 +1,10 @@
 {{ define "main" }}
 <header>
-<h1>{{ .Title }}</h1>
-<p class="attention-grabber">{{ .Description }}</p>
+<h1 id="frontpage">{{ .Title }}</h1>
+<p class="attention-grabber">{{ .Site.Params.description }}</p>
+<figure>
+<img src="/images/GP.png">
+</figure>
 </header>
 
 <article>

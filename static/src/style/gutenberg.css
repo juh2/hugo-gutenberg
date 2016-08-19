@@ -191,7 +191,7 @@ section {
 }
 
 section.navigation {
-  float: left;
+  float: right;
 }
 
 /* Links
@@ -301,10 +301,8 @@ figure {
   figure.floatRight {
     max-width: 315px;
     max-width: 17.5rem;
-    padding: 31px;
-    padding: 1.722222222222222rem;
-    margin-bottom: 0px;
-    margin-bottom: 0rem;
+    padding: 0px 31px;
+    padding: 0rem 1.722222222222222rem;
   }
 }
 @media screen and (min-width: 40em) {
@@ -313,8 +311,6 @@ figure {
     padding: 0px;
     padding: 0rem;
     text-align: left;
-    margin-top: 31px;
-    margin-top: 1.722222222222222rem;
   }
 }
 @media screen and (min-width: 40em) {
@@ -568,67 +564,6 @@ nav a {
   text-decoration: none;
 }
 
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-ul.topnav li {
-  float: left;
-}
-
-ul.topnav li a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-ul.topnav li a:hover {
-  background-color: #555;
-}
-
-ul.topnav li.icon {
-  display: none;
-}
-
-@media screen and (max-width: 680px) {
-  ul.topnav li:not(:first-child) {
-    display: none;
-  }
-
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-@media screen and (max-width: 680px) {
-  ul.topnav.responsive {
-    position: relative;
-  }
-
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
-}
 progress {
   display: inline-block;
   vertical-align: baseline;
@@ -749,38 +684,11 @@ sub {
 
 /* Paragraph
    ========================================================================== */
-p + p {
-  margin-top: -26px;
-  margin-top: -1.625rem;
-  text-indent: 26px;
-  text-indent: 1.625rem;
-}
-@media screen and (min-width: 40em) {
-  p + p .floatLeft + p,
-  p + p .floatRight + p {
-    text-indent: 31px;
-    text-indent: 1.722222222222222rem;
-  }
-}
-
-.attention-grabber + p {
-  margin-top: 0;
-  text-indent: 0;
-}
-
 .attention-grabber {
   font-size: 19.2px;
   font-size: 1.2rem;
 }
 
-@media screen and (min-width: 40em) {
-  p + p,
-  .floatLeft + p,
-  .floatRight + p {
-    margin-top: -31px;
-    margin-top: -1.722222222222222rem;
-  }
-}
 .alignLeft {
   text-align: left;
 }

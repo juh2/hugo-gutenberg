@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  {{ if .Params.lang }}
+    <body lang="{{ .Params.lang }}">
+    {{ else }}
+    <body lang="de">
+    {{ end }}
+  <title>{{ .Title }} – Das Generationenprojekt. Geschichte von unten.</title>
+
+  <link rel="stylesheet" href="/assets/combined.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic' rel='stylesheet' type='text/css'>
+    {{ template "_internal/twitter_cards.html" . }}
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/schema.html" . }}
+    {{ template "_internal/google_news.html" . }}
+
+</head>
+ 
+{{ partial "nav.html" . }}
+
+
+{{ block "main" . }}{{ end}}
+
+<footer>
+  <p>
+    <small>
+      Das Copyright für die Texte liegt bei den Autoren.
+    </small>
+    <section id="footer-nav">
+    <p><a href="/">Startseite</a> | <a href="/page/impressum">Impressum</a> | <a href="mailto:redaktion@generationenprojekt.de">Redaktion anschreiben</a>
+    </section>
+  </p>
+</footer>
+<script src="/assets/combined.min.js"></script>
+
+</body>
+</html>
