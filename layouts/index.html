@@ -1,11 +1,11 @@
 {{ define "main" }}
 
-<h1 id="frontpage">{{ .Title }}</h1>
-<p class="attention-grabber">{{ .Site.Params.description }}</p>
+<!-- <h1 id="frontpage">{{ .Title }}</h1>-->
+
 <figure>
 <img src="/images/GP.png">
 </figure>
-
+<p class="attention-grabber">{{ .Site.Params.description }}</p>
     {{ range .Data.Pages.GroupBy "Section" }}
     {{ if and (ne .Key "page") (ne .Key "editorials") }}
     <h1>{{ .Key }}</h1>
