@@ -1,8 +1,12 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  <p class="attention-grabber">{{ .Description }}</p>
+  <h1 itemprop="title">{{ .Title }}</h1>
+  {{ with .Params.author }}
+  <p itemprop="author">{{ . }}</p>
+  {{ end }}
+  <p itemprop="description" class="attention-grabber">{{ .Description }}</p>
+  <div itemprop="articleBody">
   {{ .Content }}
-
+  </div>
 <aside>
 <small>
   {{ range .Params.tags }}

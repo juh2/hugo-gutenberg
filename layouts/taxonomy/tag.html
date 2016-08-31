@@ -1,15 +1,9 @@
-{{ partial "header.html" . }}
-<body lang="de">
+{{ define "main" }}
 
-<section id="main">
-  <div>
    <h1 id="title">{{ .Title }}</h1>
+   <div>
     {{ range .Data.Pages }}
         {{ .Render "summary"}}
     {{ end }}
   </div>
-</section>
-
-<aside id="meta"> </aside>
-
-{{ partial "footer.html" . }}
+{{ end }}

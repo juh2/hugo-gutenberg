@@ -17,20 +17,21 @@
 </head>
 
 {{ if .Params.lang }}
-    <body lang="{{ .Params.lang }}">
+    <body lang="{{ .Params.lang }}" itemscope itemtype="http://schema.org/Article">
     {{ else }}
     <body lang="de">
     {{ end }}
 
+
 <div canvas="container">
 
-
 <div>
-<button class="toggle-slidebar-1">Menü</button>
+<button class="toggle-slidebar-1"><span style="font-size:2rem">&#9776;</span></button>
 </div>
+<article itemscope itemtype="http://schema.org/Article">
 
 {{ block "main" . }}{{ end}}
-
+</article>
 <footer>
   <p>
     <small>

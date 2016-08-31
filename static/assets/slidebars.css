@@ -45,8 +45,8 @@
 	position: fixed;
 	overflow: hidden;
 	overflow-y: auto;
-	background-color: black; /* Basic background color, overwrite this in your own css. */
-	color: white; /* Basic colors, overwrite this in your own css. */
+/*	background-color: #222; /* Basic background color, overwrite this in your own css. */
+/*	color: #888;  /* Basic colors, overwrite this in your own css. */
 	-webkit-overflow-scrolling: touch; /* Enables momentum scrolling on iOS devices, may be removed by setting to 'auto' in your own CSS. */
 }
 
@@ -70,7 +70,7 @@
 }
 
 [off-canvas*=left] {
-	width: 255px;
+	width: 4rem;
 	height: 100%;
 	top: 0;
 	left: 0;
@@ -140,3 +140,4 @@
 		display: none !important;
 	}
 }
+
