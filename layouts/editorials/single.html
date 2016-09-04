@@ -1,9 +1,11 @@
 {{ define "main" }}
 <article class="main">
-  <h1>{{ .Title }}</h1>
+  <h1 itemprop="title">{{ .Title }}</h1>
   <div class="post-meta">{{ .Date.Format "02.01.2006" }} </div>
-  <p class="attention-grabber">{{ .Description }}</p>
+  <p itemprop="description" class="attention-grabber">{{ .Description }}</p>
+  <div itemprop="articleBody">
   {{ .Content }}
+  </div>
 <aside>
 <small>
   {{ range .Params.tags }}

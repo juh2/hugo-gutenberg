@@ -1,11 +1,14 @@
 {{ define "main" }}
-<h1 id="frontpage">{{ .Title }}</h1>
-
-<p class="attention-grabber">{{ .Site.Params.description }}</p>
 <figure>
 <img class="toggle-slidebar-1" src="/images/GP.png">
 </figure>
+<!--
+<h1 id="frontpage">{{ .Title }}</h1>
+-->
+<p class="attention-grabber">{{ .Site.Params.description }}</p>
 
+
+<p>Falls ein Jahr nicht in der Navigation auftaucht, so liegt noch kein Text zu diesem Jahr vor.</p>
 <p>Erfahren Sie <a href="page/mitmachen">hier</a>, wie Sie einen Beitrag einreichen können.</p>
 <h1>Die Texte</h1>
     {{ range .Data.Pages.GroupBy "Section" }}
