@@ -108,7 +108,7 @@ License ....... Creative Commmons Attribution 3.0
 License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/license.txt
 */
 /* Configuration
-   ========================================================================== */
+   ======================================================================= */
 /* Calculations
    ========================================================================== */
 /* Font themes
@@ -289,10 +289,6 @@ main {
 
 section {
   display: block;
-}
-
-section.navigation {
-  float: right;
 }
 
 /* Links
@@ -659,6 +655,7 @@ ol li {
 
 nav {
   display: block;
+  float: right;
 }
 
 nav a {

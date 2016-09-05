@@ -142,18 +142,3 @@
 }
 
 
-.scrollToTop{
-	text-align:center; 
-	background: whiteSmoke;
-	font-size:4rem;
-	font-weight: bold;
-	color: #444;
-	text-decoration: none;
-	position:fixed;
-	bottom:0rem;
-	right:0rem;
-	display:none;
-}
-.scrollToTop:hover{
-	text-decoration:none;
-}
