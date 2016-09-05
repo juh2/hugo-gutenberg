@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>{{ .Title }} – Das Generationenprojekt. Geschichte von unten.</title>
 
-  <link rel="stylesheet" href="/assets/combined.css">
-  <link rel="stylesheet" href="/assets/slidebars.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/assets/combined.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/assets/slidebars.css">
 
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic' rel='stylesheet' type='text/css'>
   {{ template "_internal/twitter_cards.html" . }}
@@ -49,9 +49,9 @@
 <a href="#" class="scrollToTop">&#x2303;</a>
 
 
-<script src="/assets/combined.min.js"></script>
+<script src="{{ .Site.BaseURL }}/assets/combined.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="/assets/slidebars.min.js"></script>
+<script src="{{ .Site.BaseURL }}/assets/slidebars.min.js"></script>
 <script>
       ( function ( $ ) {
         // Initialize Slidebars
