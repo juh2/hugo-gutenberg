@@ -1,5 +1,5 @@
 /* Configuration
-   ======================================================================= */
+   ===================================================================== */
 
 $edit-mode: false; // [ true / false ] - Enables/disables the grid toggle button.
 
@@ -52,7 +52,7 @@ $leading-desktop: round($base-desktop * $line-height-desktop);
 $leading-rem-desktop: $leading-desktop / $base-desktop;
 
 /* Font themes
-   ========================================================================== */
+   ======================================================================== */
 
 $font-body: null;
 $font-headings: null;
@@ -60,8 +60,8 @@ $font-headings: null;
 @if $theme == Merriweather {
 
   // Import Merriweather
-  @import
-  url(https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic&subset=latin,latin-ext);
+  /* @import
+  url(https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic&subset=latin,latin-ext); */
 
   // Set body font
   $font-body: Merriweather, Georgia, serif;

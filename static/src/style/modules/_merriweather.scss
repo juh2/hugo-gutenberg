@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Merriweather'),
+    local('Merriweather-Regular'),
+    /* from https://fonts.gstatic.com/s/merriweather/v13/RFda8w1V0eDZheqfcyQ4EKlSqKUsDpiXlwfj-ZM2w_A.eot */
+    url('./fonts/Merriweather-Regular/Merriweather_400.eot?#iefix') format('embedded-opentype'),
+    /* from https://fonts.gstatic.com/s/merriweather/v13/RFda8w1V0eDZheqfcyQ4EBa1RVmPjeKy21_GQJaLlJI.woff */
+    url('./fonts/Merriweather-Regular/Merriweather_400.woff') format('woff'),
+    /* from https://fonts.gstatic.com/s/merriweather/v13/RFda8w1V0eDZheqfcyQ4EBUOjZSKWg4xBWp_C_qQx0o.woff2 */
+    url('./fonts/Merriweather-Regular/Merriweather_400.woff2') format('woff2'),
+    /* from https://fonts.gstatic.com/l/font?kit=RFda8w1V0eDZheqfcyQ4EN1LKoZ82bBu2f46DhHcs3c&skey=379c1eccf863c625&v=v13#Merriweather */
+    url('./fonts/Merriweather-Regular/Merriweather_400.svg#Merriweather') format('svg'),
+    /* from https://fonts.gstatic.com/s/merriweather/v13/RFda8w1V0eDZheqfcyQ4ENqQynqKV_9Plp7mupa0S4g.ttf */
+    url('./fonts/Merriweather-Regular/Merriweather_400.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('Merriweather Bold'),
+    local('Merriweather-Bold'),
+    /* from https://fonts.gstatic.com/s/merriweather/v13/ZvcMqxEwPfh2qDWBPxn6nksEPcstTxYKO7jwfJ8ykEs.eot */
+    url('./fonts/Merriweather-Bold/Merriweather_700.eot?#iefix') format('embedded-opentype'),
+    /* from https://fonts.gstatic.com/s/merriweather/v13/ZvcMqxEwPfh2qDWBPxn6nhGYIVA-f1n-gQW6IKoy_-M.woff */
+    url('./fonts/Merriweather-Bold/Merriweather_700.woff') format('woff'),
+    /* from https://fonts.gstatic.com/s/merriweather/v13/ZvcMqxEwPfh2qDWBPxn6nl53N8cLMk3D27YV4RftBu4.woff2 */
+    url('./fonts/Merriweather-Bold/Merriweather_700.woff2') format('woff2'),
+    /* from https://fonts.gstatic.com/l/font?kit=ZvcMqxEwPfh2qDWBPxn6nhl0eVtMzIgOyswgOo1sN9o&skey=76f88370d7055e09&v=v13#Merriweather */
+    url('./fonts/Merriweather-Bold/Merriweather_700.svg#Merriweather') format('svg'),
+    /* from https://fonts.gstatic.com/s/merriweather/v13/ZvcMqxEwPfh2qDWBPxn6nqp5NA6AAOjfQM_HmvD0shQ.ttf */
+    url('./fonts/Merriweather-Bold/Merriweather_700.ttf') format('truetype');
+}
