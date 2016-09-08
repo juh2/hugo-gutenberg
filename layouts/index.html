@@ -5,7 +5,7 @@
 <figure>
 <img class="toggle-slidebar-1" src="{{ .Site.BaseURL}}/images/GP.png">
 </figure>
-<h1>{{ .Site.Params.tocname }}</h1>
+<h1 id="toc">{{ .Site.Params.tocname }}</h1>
     {{ range .Data.Pages.GroupBy "Section" }}
     {{ if and (ne .Key "page") (ne .Key "editorials") }}
     <h2>{{ .Key }}</h2>

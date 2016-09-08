@@ -676,6 +676,10 @@ nav a {
   text-decoration: none;
 }
 
+nav ul {
+  margin-right: 0.5rem;
+}
+
 progress {
   display: inline-block;
   vertical-align: baseline;
