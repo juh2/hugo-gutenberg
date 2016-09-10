@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+taxonomy/autor
+
+   <h1 id="title">{{ .Title }}</h1>
+    {{ range .Data.Pages.GroupByParam "autoren" }}
+            {{ range .Pages }}
+                {{ .Render "summary"}}
+            {{ end }}
+    {{ end }}
+
+{{ end }}
