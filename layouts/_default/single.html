@@ -1,9 +1,8 @@
 {{ define "main" }}
   <h1 itemprop="title">{{ .Title }}</h1>
-  {{ with .Params.author }}
-  <p itemprop="author">{{ . }}</p>
-  {{ end }}
   <p itemprop="description" class="attention-grabber">{{ .Description }}</p>
+  <p itemprop="author">Von <a {{ with .Params.email }} href="mailto:{{ . }}"{{ end }}>{{ with .Params.autoren }}{{ . }}{{ end }}</a></p>
+  
   <div itemprop="articleBody">
   {{ .Content }}
   </div>

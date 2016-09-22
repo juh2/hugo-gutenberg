@@ -26,17 +26,21 @@
 <div canvas="container">
 
 <div>
-<button class="toggle-slidebar-1"><span style="font-size:2rem">&#9776;</span></button><span style="padding-left: 1rem;"><a href="{{ .Site.BaseURL }}/#toc">Inhalt</a>&nbsp;|&nbsp;<a href="{{ .Site.BaseURL }}/autoren">Autoren</a>&nbsp;|&nbsp;<a href="{{ .Site.BaseURL }}/blog">Blog</a>&nbsp;|&nbsp;<a href="{{ .Site.BaseURL }}/page/about">Info</a>&nbsp;|&nbsp;<a href="{{ .Site.BaseURL }}/page/impressum">Impressum</a></span>
+<button class="toggle-slidebar-1"><span style="font-size:2rem">&#9776;</span></button>
+<span style="padding-left: 1rem;"><a href="{{ .Site.BaseURL }}/">Start</a>&nbsp;|&nbsp;<a href="{{ .Site.BaseURL }}/#toc">Inhalt</a>&nbsp;|&nbsp;<a href="{{ .Site.BaseURL }}/autoren">Autoren</a>&nbsp;|&nbsp;<a href="{{ .Site.BaseURL }}/blog">Blog</a>&nbsp;|&nbsp;<a href="{{ .Site.BaseURL }}/page/about">Info</a>&nbsp;|&nbsp;<a href="{{ .Site.BaseURL }}/page/impressum">Impressum</a></span>
 </div>
 <article itemscope itemtype="http://schema.org/Article">
 
 {{ block "main" . }}{{ end}}
 
-<footer>
-  <p>
+ <p>
     <small>
       Das Copyright für die Texte liegt bei den Autoren.
     </small>
+</p>
+
+<footer>
+    
     <section id="footer-nav">
     <a href="{{ .Site.BaseURL }}/">Start</a> | 
     <a href="{{ .Site.BaseURL }}/page/about">Info</a> |
