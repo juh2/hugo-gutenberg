@@ -2,7 +2,6 @@
 br {
   margin-bottom: 0;
 }
-
 // Enable small caps if available & fix letter spacing
 abbr {
   letter-spacing: 0.1em;
@@ -72,7 +71,7 @@ sub {
 }
 
 /* Paragraph
-   ========================================================================== */
+========================================================================== */
 
 @if $paragraph-indent == true {
 
@@ -81,17 +80,17 @@ sub {
     text-indent: #{ $leading + 'px'};
     text-indent: #{ $leading-rem + 'rem'};
 
-    .floatLeft + p,
-    .floatRight + p {
+  }
 
-      @media screen and (min-width: #{ $max-width + 5 + 'em'}) {
-        $leading: $leading-desktop;
-        $leading-rem: $leading-rem-desktop;
+  .floatLeft + p,
+  .floatRight + p {
 
-        text-indent: #{ $leading + 'px'};
-        text-indent: #{ $leading-rem + 'rem'};
-      }
+    @media screen and (min-width: #{ $max-width + 5 + 'em'}) {
+      $leading: $leading-desktop;
+      $leading-rem: $leading-rem-desktop;
 
+      text-indent: #{ $leading + 'px'};
+      text-indent: #{ $leading-rem + 'rem'};
     }
 
   }
