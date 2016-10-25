@@ -16,7 +16,7 @@
 {{ else }}
 {{ with .Site.Params.image }}
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image:src" content="{{ . }}"/>
+  <meta name="twitter:image:src" content="{{ . | absURL }}"/>
   {{ end }}
   {{ end }}
 <!-- Twitter Card data -->
