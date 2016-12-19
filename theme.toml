@@ -16,6 +16,6 @@ min_version = 0.15
 
 # If porting an existing theme
 [original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Gutenberg"
+  homepage = "http://matejlatin.github.io/Gutenberg/"
+  repo = "https://github.com/matejlatin/Gutenberg"
